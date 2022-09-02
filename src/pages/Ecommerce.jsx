@@ -12,10 +12,7 @@ import {
 import { useStateContext } from '../context/contextProvider'
 import { PdfLineCap } from '@syncfusion/ej2/pdf-export'
 
-const Ecomerce = () => {
-
-
-
+const Ecommerce = () => {
 
   return (
     <div className='mt-12'>
@@ -127,4 +124,4 @@ const Ecomerce = () => {
   )
 }
 
-export default Ecomerce
+export default Ecommerce
