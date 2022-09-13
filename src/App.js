@@ -19,7 +19,7 @@ const App = () => {
 						<TooltipComponent content="Settings" position="Top">
 							<button
 								type='button'
-								className='text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white'
+								className='text-2xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white'
 								style={{ background: currentColor, borderRadius: '50%' }}
 								onClick={()=>{setThemeSettings(true)}}
 								>

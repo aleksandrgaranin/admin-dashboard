@@ -3,29 +3,29 @@ import {
   ChartComponent,
   SeriesCollectionDirective,
   SeriesDirective, Inject,
-  DateTime, Legend, Tooltip, LineSeries
+  DateTime, Legend, Tooltip, SplineAreaSeries
 } from '@syncfusion/ej2-react-charts'
 
-import { lineCustomSeries, LinePrimaryYAxis, LinePrimaryXAxis } from '../../data/dummy'
+import { areaCustomSeries, areaPrimaryYAxis, areaPrimaryXAxis } from '../../data/dummy'
+import { Header } from '../../components'
 
 import { useStateContext } from '../../context/contextProvider'
 
-const LineChart = () => {
+const AreaChart = () => {
   const { currentMode } = useStateContext()
 
   return (
     <ChartComponent
       id='line-chart'
       height='420px'
-      primaryXAxis={LinePrimaryXAxis}
-      primaryYAxis={LinePrimaryYAxis}
+      primaryXAxis={areaPrimaryXAxis}
+      primaryYAxis={areaPrimaryYAxis}
       chartArea={{ border: { width: 0 } }}
-      tooltip={{ enable: true }}
       background={currentMode === 'Dark' ? '#33373E' : '#fff'}
     >
-      <Inject services={[LineSeries, DateTime, Legend, Tooltip]} />
+      <Inject services={[SplineAreaSeries, DateTime, Legend ]} />
       <SeriesCollectionDirective>
-        {lineCustomSeries.map((item, index) => (
+        {areaCustomSeries.map((item, index) => (
           <SeriesDirective key={index} {...item} />
         ))}
       </SeriesCollectionDirective>
@@ -33,4 +33,4 @@ const LineChart = () => {
   )
 }
 
-export default LineChart
+export default AreaChart

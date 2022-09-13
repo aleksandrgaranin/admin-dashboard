@@ -44,22 +44,30 @@ export const gridOrderStatus = (props) => (
 );
 
 export const kanbanGrid = [
-  { headerText: 'To Do',
+  {
+    headerText: 'To Do',
     keyField: 'Open',
-    allowToggle: true },
+    allowToggle: true
+  },
 
-  { headerText: 'In Progress',
+  {
+    headerText: 'In Progress',
     keyField: 'InProgress',
-    allowToggle: true },
+    allowToggle: true
+  },
 
-  { headerText: 'Testing',
+  {
+    headerText: 'Testing',
     keyField: 'Testing',
     allowToggle: true,
-    isExpanded: false },
+    isExpanded: false
+  },
 
-  { headerText: 'Done',
+  {
+    headerText: 'Done',
     keyField: 'Close',
-    allowToggle: true },
+    allowToggle: true
+  },
 ];
 const gridEmployeeProfile = (props) => (
   <div className="flex items-center gap-2">
@@ -323,20 +331,26 @@ export const colorMappingData = [
 ];
 
 export const rangeColorMapping = [
-  { label: '1°C to 10°C',
+  {
+    label: '1°C to 10°C',
     start: '1',
     end: '10',
-    colors: colorMappingData[1] },
+    colors: colorMappingData[1]
+  },
 
-  { label: '11°C to 20°C',
+  {
+    label: '11°C to 20°C',
     start: '11',
     end: '20',
-    colors: colorMappingData[2] },
+    colors: colorMappingData[2]
+  },
 
-  { label: '21°C to 30°C',
+  {
+    label: '21°C to 30°C',
     start: '21',
     end: '30',
-    colors: colorMappingData[3] },
+    colors: colorMappingData[3]
+  },
 
 ];
 
@@ -376,55 +390,67 @@ export const LinePrimaryXAxis = {
   labelFormat: 'y',
   intervalType: 'Years',
   edgeLabelPlacement: 'Shift',
-  majorGridLines: { width: 0 },
+  majorGridLines: { width: 1 },
   background: 'white',
 };
 
 export const LinePrimaryYAxis = {
   labelFormat: '{value}%',
   rangePadding: 'None',
-  minimum: 0,
-  maximum: 100,
-  interval: 20,
-  lineStyle: { width: 0 },
+  minimum: -3,
+  maximum: 10,
+  interval: 1,
+  lineStyle: { width: 1 },
   majorTickLines: { width: 0 },
   minorTickLines: { width: 0 },
 };
 
 export const customersGrid = [
   { type: 'checkbox', width: '50' },
-  { headerText: 'Name',
+  {
+    headerText: 'Name',
     width: '150',
     template: customerGridImage,
-    textAlign: 'Center' },
-  { field: 'ProjectName',
+    textAlign: 'Center'
+  },
+  {
+    field: 'ProjectName',
     headerText: 'Project Name',
     width: '150',
-    textAlign: 'Center' },
-  { field: 'Status',
+    textAlign: 'Center'
+  },
+  {
+    field: 'Status',
     headerText: 'Status',
     width: '130',
     format: 'yMd',
     textAlign: 'Center',
-    template: customerGridStatus },
+    template: customerGridStatus
+  },
   {
     field: 'Weeks',
     headerText: 'Weeks',
     width: '100',
     format: 'C2',
-    textAlign: 'Center' },
-  { field: 'Budget',
+    textAlign: 'Center'
+  },
+  {
+    field: 'Budget',
     headerText: 'Budget',
     width: '100',
     format: 'yMd',
-    textAlign: 'Center' },
+    textAlign: 'Center'
+  },
 
-  { field: 'Location',
+  {
+    field: 'Location',
     headerText: 'Location',
     width: '150',
-    textAlign: 'Center' },
+    textAlign: 'Center'
+  },
 
-  { field: 'CustomerID',
+  {
+    field: 'CustomerID',
     headerText: 'Customer ID',
     width: '120',
     textAlign: 'Center',
@@ -434,39 +460,51 @@ export const customersGrid = [
 ];
 
 export const employeesGrid = [
-  { headerText: 'Employee',
+  {
+    headerText: 'Employee',
     width: '150',
     template: gridEmployeeProfile,
-    textAlign: 'Center' },
-  { field: 'Name',
+    textAlign: 'Center'
+  },
+  {
+    field: 'Name',
     headerText: '',
     width: '0',
     textAlign: 'Center',
   },
-  { field: 'Title',
+  {
+    field: 'Title',
     headerText: 'Designation',
     width: '170',
     textAlign: 'Center',
   },
-  { headerText: 'Country',
+  {
+    headerText: 'Country',
     width: '120',
     textAlign: 'Center',
-    template: gridEmployeeCountry },
+    template: gridEmployeeCountry
+  },
 
-  { field: 'HireDate',
+  {
+    field: 'HireDate',
     headerText: 'Hire Date',
     width: '135',
     format: 'yMd',
-    textAlign: 'Center' },
+    textAlign: 'Center'
+  },
 
-  { field: 'ReportsTo',
+  {
+    field: 'ReportsTo',
     headerText: 'Reports To',
     width: '120',
-    textAlign: 'Center' },
-  { field: 'EmployeeID',
+    textAlign: 'Center'
+  },
+  {
+    field: 'EmployeeID',
     headerText: 'Employee ID',
     width: '125',
-    textAlign: 'Center' },
+    textAlign: 'Center'
+  },
 ];
 
 export const links = [
@@ -530,30 +568,30 @@ export const links = [
         icon: <AiOutlineAreaChart />,
       },
 
-      {
-        name: 'bar',
-        icon: <AiOutlineBarChart />,
-      },
-      {
-        name: 'pie',
-        icon: <FiPieChart />,
-      },
-      {
-        name: 'financial',
-        icon: <RiStockLine />,
-      },
-      {
-        name: 'color-mapping',
-        icon: <BsBarChart />,
-      },
-      {
-        name: 'pyramid',
-        icon: <GiLouvrePyramid />,
-      },
-      {
-        name: 'stacked',
-        icon: <AiOutlineBarChart />,
-      },
+      // {
+      //   name: 'bar',
+      //   icon: <AiOutlineBarChart />,
+      // },
+      // {
+      //   name: 'pie',
+      //   icon: <FiPieChart />,
+      // },
+      // {
+      //   name: 'financial',
+      //   icon: <RiStockLine />,
+      // },
+      // {
+      //   name: 'color-mapping',
+      //   icon: <BsBarChart />,
+      // },
+      // {
+      //   name: 'pyramid',
+      //   icon: <GiLouvrePyramid />,
+      // },
+      // {
+      //   name: 'stacked',
+      //   icon: <AiOutlineBarChart />,
+      // },
     ],
   },
 ];
@@ -884,7 +922,8 @@ export const ordersGrid = [
     editType: 'dropdownedit',
     textAlign: 'Center',
   },
-  { field: 'CustomerName',
+  {
+    field: 'CustomerName',
     headerText: 'Customer Name',
     width: '150',
     textAlign: 'Center',
@@ -1490,7 +1529,7 @@ export const employeesData = [
     Country: 'USA',
     ReportsTo: 'Carson',
     EmployeeImage:
-    avatar3,
+      avatar3,
   },
   {
     EmployeeID: 2,
@@ -1560,7 +1599,7 @@ export const employeesData = [
     Country: 'USA',
     ReportsTo: 'Carson',
     EmployeeImage:
-    avatar2,
+      avatar2,
 
   },
   {
@@ -1631,7 +1670,7 @@ export const employeesData = [
     Country: 'USA',
     ReportsTo: 'Carson',
     EmployeeImage:
-    avatar,
+      avatar,
   },
   {
     EmployeeID: 2,
@@ -1701,7 +1740,7 @@ export const employeesData = [
     Country: 'USA',
     ReportsTo: 'Carson',
     EmployeeImage:
-    avatar2,
+      avatar2,
 
   },
   {
@@ -1772,7 +1811,7 @@ export const employeesData = [
     Country: 'USA',
     ReportsTo: 'Carson',
     EmployeeImage:
-    avatar2,
+      avatar2,
 
   },
   {
@@ -1843,7 +1882,7 @@ export const employeesData = [
     Country: 'USA',
     ReportsTo: 'Carson',
     EmployeeImage:
-    avatar2,
+      avatar2,
 
   },
   {
@@ -1914,7 +1953,7 @@ export const employeesData = [
     Country: 'USA',
     ReportsTo: 'Carson',
     EmployeeImage:
-    avatar2,
+      avatar2,
 
   },
   {
@@ -1985,7 +2024,7 @@ export const employeesData = [
     Country: 'USA',
     ReportsTo: 'Carson',
     EmployeeImage:
-    avatar2,
+      avatar2,
 
   },
   {
@@ -2056,7 +2095,7 @@ export const employeesData = [
     Country: 'USA',
     ReportsTo: 'Carson',
     EmployeeImage:
-    avatar2,
+      avatar2,
 
   },
   {
@@ -2176,7 +2215,7 @@ export const ordersData = [
     Status: 'rejected',
     StatusBg: 'red',
     ProductImage:
-    product1,
+      product1,
   },
   {
     OrderID: 94757,
@@ -3041,33 +3080,316 @@ export const scheduleData = [
 
 export const lineChartData = [
   [
-    { x: new Date(2005, 0, 1), y: 21 },
-    { x: new Date(2006, 0, 1), y: 24 },
-    { x: new Date(2007, 0, 1), y: 36 },
-    { x: new Date(2008, 0, 1), y: 38 },
-    { x: new Date(2009, 0, 1), y: 54 },
-    { x: new Date(2010, 0, 1), y: 57 },
-    { x: new Date(2011, 0, 1), y: 70 },
-  ],
-  [
-    { x: new Date(2005, 0, 1), y: 28 },
-    { x: new Date(2006, 0, 1), y: 44 },
-    { x: new Date(2007, 0, 1), y: 48 },
-    { x: new Date(2008, 0, 1), y: 50 },
-    { x: new Date(2009, 0, 1), y: 66 },
-    { x: new Date(2010, 0, 1), y: 78 },
-    { x: new Date(2011, 0, 1), y: 84 },
-  ],
+    { x: new Date(2000, 1, 1), y: 2.7 },
+    { x: new Date(2000, 2, 1), y: 3.2 },
+    { x: new Date(2000, 3, 1), y: 3.8 },
+    { x: new Date(2000, 4, 1), y: 3.1 },
+    { x: new Date(2000, 5, 1), y: 3.2 },
+    { x: new Date(2000, 6, 1), y: 3.7 },
+    { x: new Date(2000, 7, 1), y: 3.7 },
+    { x: new Date(2000, 8, 1), y: 3.4 },
+    { x: new Date(2000, 9, 1), y: 3.5 },
+    { x: new Date(2000, 10, 1), y: 3.4 },
+    { x: new Date(2000, 11, 1), y: 3.4 },
+    { x: new Date(2000, 12, 1), y: 3.4 },
+    { x: new Date(2001, 1, 1), y: 3.7 },
+    { x: new Date(2001, 2, 1), y: 3.5 },
+    { x: new Date(2001, 3, 1), y: 2.9 },
+    { x: new Date(2001, 4, 1), y: 3.3 },
+    { x: new Date(2001, 5, 1), y: 3.6 },
+    { x: new Date(2001, 6, 1), y: 3.2 },
+    { x: new Date(2001, 7, 1), y: 2.7 },
+    { x: new Date(2001, 8, 1), y: 2.7 },
+    { x: new Date(2001, 9, 1), y: 2.6 },
+    { x: new Date(2001, 10, 1), y: 2.1 },
+    { x: new Date(2001, 11, 1), y: 1.9 },
+    { x: new Date(2001, 12, 1), y: 1.6 },
+    { x: new Date(2002, 1, 1), y: 1.1 },
+    { x: new Date(2002, 2, 1), y: 1.1 },
+    { x: new Date(2002, 3, 1), y: 1.5 },
+    { x: new Date(2002, 4, 1), y: 1.6 },
+    { x: new Date(2002, 5, 1), y: 1.2 },
+    { x: new Date(2002, 6, 1), y: 1.1 },
+    { x: new Date(2002, 7, 1), y: 1.5 },
+    { x: new Date(2002, 8, 1), y: 1.8 },
+    { x: new Date(2002, 9, 1), y: 1.5 },
+    { x: new Date(2002, 10, 1), y: 2.0 },
+    { x: new Date(2002, 11, 1), y: 2.2 },
+    { x: new Date(2002, 12, 1), y: 2.4 },
+    { x: new Date(2003, 1, 1), y: 2.6 },
+    { x: new Date(2003, 2, 1), y: 3.0 },
+    { x: new Date(2003, 3, 1), y: 3.0 },
+    { x: new Date(2003, 4, 1), y: 2.2 },
+    { x: new Date(2003, 5, 1), y: 2.1 },
+    { x: new Date(2003, 6, 1), y: 2.1 },
+    { x: new Date(2003, 7, 1), y: 2.1 },
+    { x: new Date(2003, 8, 1), y: 2.2 },
+    { x: new Date(2003, 9, 1), y: 2.3 },
+    { x: new Date(2003, 10, 1), y: 2.0 },
+    { x: new Date(2003, 11, 1), y: 1.8 },
+    { x: new Date(2003, 12, 1), y: 1.9 },
+    { x: new Date(2004, 1, 1), y: 1.7 },
+    { x: new Date(2004, 2, 1), y: 1.9 },
+    { x: new Date(2004, 3, 1), y: 1.7 },
+    { x: new Date(2004, 4, 1), y: 2.3 },
+    { x: new Date(2004, 5, 1), y: 3.1 },
+    { x: new Date(2004, 6, 1), y: 3.3 },
+    { x: new Date(2004, 7, 1), y: 3.0 },
+    { x: new Date(2004, 8, 1), y: 2.7 },
+    { x: new Date(2004, 9, 1), y: 2.5 },
+    { x: new Date(2004, 10, 1), y: 3.2 },
+    { x: new Date(2004, 11, 1), y: 3.5 },
+    { x: new Date(2004, 12, 1), y: 3.3 },
 
-  [
-    { x: new Date(2005, 0, 1), y: 10 },
-    { x: new Date(2006, 0, 1), y: 20 },
-    { x: new Date(2007, 0, 1), y: 30 },
-    { x: new Date(2008, 0, 1), y: 39 },
-    { x: new Date(2009, 0, 1), y: 50 },
-    { x: new Date(2010, 0, 1), y: 70 },
-    { x: new Date(2011, 0, 1), y: 100 },
+    { x: new Date(2005, 1, 1), y: 3.0 },
+    { x: new Date(2005, 2, 1), y: 3.0 },
+    { x: new Date(2005, 3, 1), y: 3.1 },
+    { x: new Date(2005, 4, 1), y: 3.5 },
+    { x: new Date(2005, 5, 1), y: 2.8 },
+    { x: new Date(2005, 6, 1), y: 2.5 },
+    { x: new Date(2005, 7, 1), y: 3.2 },
+    { x: new Date(2005, 8, 1), y: 3.6 },
+    { x: new Date(2005, 9, 1), y: 4.7 },
+    { x: new Date(2005, 10, 1), y: 4.3 },
+    { x: new Date(2005, 11, 1), y: 3.5 },
+    { x: new Date(2005, 12, 1), y: 3.4 },
+
+    { x: new Date(2006, 1, 1), y: 4.0 },
+    { x: new Date(2006, 2, 1), y: 3.6 },
+    { x: new Date(2006, 3, 1), y: 3.4 },
+    { x: new Date(2006, 4, 1), y: 3.5 },
+    { x: new Date(2006, 5, 1), y: 4.2 },
+    { x: new Date(2006, 6, 1), y: 4.3 },
+    { x: new Date(2006, 7, 1), y: 4.1 },
+    { x: new Date(2006, 8, 1), y: 3.8 },
+    { x: new Date(2006, 9, 1), y: 2.1 },
+    { x: new Date(2006, 10, 1), y: 1.3 },
+    { x: new Date(2006, 11, 1), y: 2.0 },
+    { x: new Date(2006, 12, 1), y: 2.5 },
+
+    { x: new Date(2007, 1, 1), y: 2.1 },
+    { x: new Date(2007, 2, 1), y: 2.4 },
+    { x: new Date(2007, 3, 1), y: 2.8 },
+    { x: new Date(2007, 4, 1), y: 2.6 },
+    { x: new Date(2007, 5, 1), y: 2.7 },
+    { x: new Date(2007, 6, 1), y: 2.7 },
+    { x: new Date(2007, 7, 1), y: 2.4 },
+    { x: new Date(2007, 8, 1), y: 2.0 },
+    { x: new Date(2007, 9, 1), y: 2.8 },
+    { x: new Date(2007, 10, 1), y: 3.5 },
+    { x: new Date(2007, 11, 1), y: 4.3 },
+    { x: new Date(2007, 12, 1), y: 4.1 },
+
+    { x: new Date(2008, 1, 1), y: 4.3 },
+    { x: new Date(2008, 2, 1), y: 4.0 },
+    { x: new Date(2008, 3, 1), y: 4.0 },
+    { x: new Date(2008, 4, 1), y: 3.9 },
+    { x: new Date(2008, 5, 1), y: 4.2 },
+    { x: new Date(2008, 6, 1), y: 5.0 },
+    { x: new Date(2008, 7, 1), y: 5.6 },
+    { x: new Date(2008, 8, 1), y: 5.4 },
+    { x: new Date(2008, 9, 1), y: 4.9 },
+    { x: new Date(2008, 10, 1), y: 3.7 },
+    { x: new Date(2008, 11, 1), y: 1.1 },
+    { x: new Date(2008, 12, 1), y: 0.1 },
+
+    { x: new Date(2009, 1, 1), y: 0 },
+    { x: new Date(2009, 2, 1), y: 0.2 },
+    { x: new Date(2009, 3, 1), y: -0.4 },
+    { x: new Date(2009, 4, 1), y: -0.7 },
+    { x: new Date(2009, 5, 1), y: -1.3 },
+    { x: new Date(2009, 6, 1), y: -1.4 },
+    { x: new Date(2009, 7, 1), y: -2.1 },
+    { x: new Date(2009, 8, 1), y: -1.5 },
+    { x: new Date(2009, 9, 1), y: -1.3 },
+    { x: new Date(2009, 10, 1), y: -0.2 },
+    { x: new Date(2009, 11, 1), y: 1.8 },
+    { x: new Date(2009, 12, 1), y: 2.7 },
+
+    { x: new Date(2010, 1, 1), y: 2.6 },
+    { x: new Date(2010, 2, 1), y: 2.1 },
+    { x: new Date(2010, 3, 1), y: 2.3 },
+    { x: new Date(2010, 4, 1), y: 2.2 },
+    { x: new Date(2010, 5, 1), y: 2.0 },
+    { x: new Date(2010, 6, 1), y: 1.1 },
+    { x: new Date(2010, 7, 1), y: 1.2 },
+    { x: new Date(2010, 8, 1), y: 1.1 },
+    { x: new Date(2010, 9, 1), y: 1.1 },
+    { x: new Date(2010, 10, 1), y: 1.2 },
+    { x: new Date(2010, 11, 1), y: 1.1 },
+    { x: new Date(2010, 12, 1), y: 1.5 },
+
+    { x: new Date(2011, 1, 1), y: 1.6 },
+    { x: new Date(2011, 2, 1), y: 2.1 },
+    { x: new Date(2011, 3, 1), y: 2.7 },
+    { x: new Date(2011, 4, 1), y: 3.2 },
+    { x: new Date(2011, 5, 1), y: 3.6 },
+    { x: new Date(2011, 6, 1), y: 3.6 },
+    { x: new Date(2011, 7, 1), y: 3.6 },
+    { x: new Date(2011, 8, 1), y: 3.8 },
+    { x: new Date(2011, 9, 1), y: 3.9 },
+    { x: new Date(2011, 10, 1), y: 3.5 },
+    { x: new Date(2011, 11, 1), y: 3.4 },
+    { x: new Date(2011, 12, 1), y: 3.0 },
+
+    { x: new Date(2012, 1, 1), y: 2.9 },
+    { x: new Date(2012, 2, 1), y: 2.9 },
+    { x: new Date(2012, 3, 1), y: 2.7 },
+    { x: new Date(2012, 4, 1), y: 2.3 },
+    { x: new Date(2012, 5, 1), y: 1.7 },
+    { x: new Date(2012, 6, 1), y: 1.7 },
+    { x: new Date(2012, 7, 1), y: 1.4 },
+    { x: new Date(2012, 8, 1), y: 1.7 },
+    { x: new Date(2012, 9, 1), y: 2.0 },
+    { x: new Date(2012, 10, 1), y: 2.2 },
+    { x: new Date(2012, 11, 1), y: 1.8 },
+    { x: new Date(2012, 12, 1), y: 1.7 },
+
+    { x: new Date(2013, 1, 1), y: 1.6 },
+    { x: new Date(2013, 2, 1), y: 2.0 },
+    { x: new Date(2013, 3, 1), y: 1.5 },
+    { x: new Date(2013, 4, 1), y: 1.1 },
+    { x: new Date(2013, 5, 1), y: 1.4 },
+    { x: new Date(2013, 6, 1), y: 1.8 },
+    { x: new Date(2013, 7, 1), y: 2.0 },
+    { x: new Date(2013, 8, 1), y: 1.5 },
+    { x: new Date(2013, 9, 1), y: 1.2 },
+    { x: new Date(2013, 10, 1), y: 1.0 },
+    { x: new Date(2013, 11, 1), y: 1.2 },
+    { x: new Date(2013, 12, 1), y: 1.5 },
+
+    { x: new Date(2014, 1, 1), y: 1.6 },
+    { x: new Date(2014, 2, 1), y: 1.1 },
+    { x: new Date(2014, 3, 1), y: 1.5 },
+    { x: new Date(2014, 4, 1), y: 2.0 },
+    { x: new Date(2014, 5, 1), y: 2.1 },
+    { x: new Date(2014, 6, 1), y: 2.1 },
+    { x: new Date(2014, 7, 1), y: 2.0 },
+    { x: new Date(2014, 8, 1), y: 1.7 },
+    { x: new Date(2014, 9, 1), y: 1.7 },
+    { x: new Date(2014, 10, 1), y: 1.7 },
+    { x: new Date(2014, 11, 1), y: 1.3 },
+    { x: new Date(2014, 12, 1), y: 0.8 },
+
+    { x: new Date(2015, 1, 1), y: -0.1 },
+    { x: new Date(2015, 2, 1), y: 0.0 },
+    { x: new Date(2015, 3, 1), y: -0.1 },
+    { x: new Date(2015, 4, 1), y: -0.2 },
+    { x: new Date(2015, 5, 1), y: 0.0 },
+    { x: new Date(2015, 6, 1), y: 0.1 },
+    { x: new Date(2015, 7, 1), y: 0.2 },
+    { x: new Date(2015, 8, 1), y: 0.2 },
+    { x: new Date(2015, 9, 1), y: 0.0 },
+    { x: new Date(2015, 10, 1), y: 0.2 },
+    { x: new Date(2015, 11, 1), y: 0.5 },
+    { x: new Date(2015, 12, 1), y: 0.7 },
+
+    { x: new Date(2016, 1, 1), y: 1.4},
+    { x: new Date(2016, 2, 1), y: 1.0},
+    { x: new Date(2016, 3, 1), y: 0.9},
+    { x: new Date(2016, 4, 1), y: 1.1},
+    { x: new Date(2016, 5, 1), y: 1.0},
+    { x: new Date(2016, 6, 1), y: 1.0},
+    { x: new Date(2016, 7, 1), y: 0.8},
+    { x: new Date(2016, 8, 1), y: 1.1},
+    { x: new Date(2016, 9, 1), y: 1.5},
+    { x: new Date(2016, 10, 1), y:1.6},
+    { x: new Date(2016, 11, 1), y:1.7},
+    { x: new Date(2016, 12, 1), y:2.1},
+
+    { x: new Date(2017, 1, 1), y: 2.5},
+    { x: new Date(2017, 2, 1), y: 2.7},
+    { x: new Date(2017, 3, 1), y: 2.4},
+    { x: new Date(2017, 4, 1), y: 2.2},
+    { x: new Date(2017, 5, 1), y: 1.9},
+    { x: new Date(2017, 6, 1), y: 1.6},
+    { x: new Date(2017, 7, 1), y: 1.7},
+    { x: new Date(2017, 8, 1), y: 1.9},
+    { x: new Date(2017, 9, 1), y: 2.2},
+    { x: new Date(2017, 10, 1), y:2.0},
+    { x: new Date(2017, 11, 1), y:2.2},
+    { x: new Date(2017, 12, 1), y:2.1},
+
+    { x: new Date(2018, 1, 1), y: 2.1},
+    { x: new Date(2018, 2, 1), y: 2.2},
+    { x: new Date(2018, 3, 1), y: 2.4},
+    { x: new Date(2018, 4, 1), y: 2.5},
+    { x: new Date(2018, 5, 1), y: 2.8},
+    { x: new Date(2018, 6, 1), y: 2.9},
+    { x: new Date(2018, 7, 1), y: 2.9},
+    { x: new Date(2018, 8, 1), y: 2.7},
+    { x: new Date(2018, 9, 1), y: 2.3},
+    { x: new Date(2018, 10, 1), y:2.5},
+    { x: new Date(2018, 11, 1), y:2.2},
+    { x: new Date(2018, 12, 1), y:1.9},
+
+    { x: new Date(2019, 1, 1), y: 1.6},
+    { x: new Date(2019, 2, 1), y: 1.5},
+    { x: new Date(2019, 3, 1), y: 1.9},
+    { x: new Date(2019, 4, 1), y: 2.0},
+    { x: new Date(2019, 5, 1), y: 1.8},
+    { x: new Date(2019, 6, 1), y: 1.6},
+    { x: new Date(2019, 7, 1), y: 1.8},
+    { x: new Date(2019, 8, 1), y: 1.7},
+    { x: new Date(2019, 9, 1), y: 1.7},
+    { x: new Date(2019, 10, 1), y:1.8},
+    { x: new Date(2019, 11, 1), y:2.1},
+    { x: new Date(2019, 12, 1), y:2.3},
+
+    { x: new Date(2020, 1, 1), y: 2.5},
+    { x: new Date(2020, 2, 1), y: 2.3},
+    { x: new Date(2020, 3, 1), y: 1.5},
+    { x: new Date(2020, 4, 1), y: 0.3},
+    { x: new Date(2020, 5, 1), y: 0.1},
+    { x: new Date(2020, 6, 1), y: 0.6},
+    { x: new Date(2020, 7, 1), y: 1.0},
+    { x: new Date(2020, 8, 1), y: 1.3},
+    { x: new Date(2020, 9, 1), y: 1.4},
+    { x: new Date(2020, 10, 1), y:1.2},
+    { x: new Date(2020, 11, 1), y:1.2},
+    { x: new Date(2020, 12, 1), y:1.4},
+
+    { x: new Date(2021, 1, 1), y: 1.4},
+    { x: new Date(2021, 2, 1), y: 1.7},
+    { x: new Date(2021, 3, 1), y: 2.6},
+    { x: new Date(2021, 4, 1), y: 4.2},
+    { x: new Date(2021, 5, 1), y: 5.0},
+    { x: new Date(2021, 6, 1), y: 5.4},
+    { x: new Date(2021, 7, 1), y: 5.4},
+    { x: new Date(2021, 8, 1), y: 5.3},
+    { x: new Date(2021, 9, 1), y: 5.4},
+    { x: new Date(2021, 10, 1), y:6.2},
+    { x: new Date(2021, 11, 1), y:6.8},
+    { x: new Date(2021, 12, 1), y:7.0},
+
+    { x: new Date(2022, 1, 1), y: 7.5},
+    { x: new Date(2022, 2, 1), y: 7.9},
+    { x: new Date(2022, 3, 1), y: 8.5},
+    { x: new Date(2022, 4, 1), y: 8.3},
+    { x: new Date(2022, 5, 1), y: 8.6},
+    { x: new Date(2022, 6, 1), y: 9.1},
+    { x: new Date(2022, 7, 1), y: 8.5},
+
   ],
+  // [
+  //   { x: new Date(2005, 0, 1), y: 28 },
+  //   { x: new Date(2006, 0, 1), y: 44 },
+  //   { x: new Date(2007, 0, 1), y: 48 },
+  //   { x: new Date(2008, 0, 1), y: 50 },
+  //   { x: new Date(2009, 0, 1), y: 66 },
+  //   { x: new Date(2010, 0, 1), y: 78 },
+  //   { x: new Date(2011, 0, 1), y: 84 },
+  // ],
+
+  // [
+  //   { x: new Date(2005, 0, 1), y: 10 },
+  //   { x: new Date(2006, 0, 1), y: 20 },
+  //   { x: new Date(2007, 0, 1), y: 30 },
+  //   { x: new Date(2008, 0, 1), y: 39 },
+  //   { x: new Date(2009, 0, 1), y: 50 },
+  //   { x: new Date(2010, 0, 1), y: 70 },
+  //   { x: new Date(2011, 0, 1), y: 100 },
+  // ],
 ];
 export const dropdownData = [
   {
@@ -3092,29 +3414,35 @@ export const SparklineAreaData = [
 ];
 
 export const lineCustomSeries = [
-  { dataSource: lineChartData[0],
+  {
+    dataSource: lineChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'Germany',
+    name: 'United States',
     width: '2',
-    marker: { visible: true, width: 10, height: 10 },
-    type: 'Line' },
+    marker: { visible: true, width: 1, height: 1 },
+    type: 'Line'
+  },
 
-  { dataSource: lineChartData[1],
-    xName: 'x',
-    yName: 'y',
-    name: 'England',
-    width: '2',
-    marker: { visible: true, width: 10, height: 10 },
-    type: 'Line' },
+  // {
+  //   dataSource: lineChartData[1],
+  //   xName: 'x',
+  //   yName: 'y',
+  //   name: 'England',
+  //   width: '2',
+  //   marker: { visible: true, width: 10, height: 10 },
+  //   type: 'Line'
+  // },
 
-  { dataSource: lineChartData[2],
-    xName: 'x',
-    yName: 'y',
-    name: 'India',
-    width: '2',
-    marker: { visible: true, width: 10, height: 10 },
-    type: 'Line' },
+  // {
+  //   dataSource: lineChartData[2],
+  //   xName: 'x',
+  //   yName: 'y',
+  //   name: 'India',
+  //   width: '2',
+  //   marker: { visible: true, width: 10, height: 10 },
+  //   type: 'Line'
+  // },
 
 ];
 
@@ -3177,7 +3505,8 @@ export const stackedChartData = [
 
 export const stackedCustomSeries = [
 
-  { dataSource: stackedChartData[0],
+  {
+    dataSource: stackedChartData[0],
     xName: 'x',
     yName: 'y',
     name: 'Budget',
@@ -3186,7 +3515,8 @@ export const stackedCustomSeries = [
 
   },
 
-  { dataSource: stackedChartData[1],
+  {
+    dataSource: stackedChartData[1],
     xName: 'x',
     yName: 'y',
     name: 'Expense',

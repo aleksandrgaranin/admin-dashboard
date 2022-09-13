@@ -32,7 +32,7 @@ const Ecommerce = () => {
               color="white" 
               bgColor={currentColor}
               text="Download"
-              borderRadius="10px"
+              borderRadius="5px"
               size="md"
             />
           </div>
@@ -43,11 +43,11 @@ const Ecommerce = () => {
             <div
               key={item.title}
               className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg
-               md:w-56 p-4 pt-9 rounded-2xl"
+               md:w-56 p-4 pt-9 rounded-xl"
             >
               <button type="button" 
                 style={{color: item.color, backgroundColor: item.iconBg }}
-                className="text-2xl opacity-0.9 rounded-full p-4 hover:drop-shadow-lg"
+                className="text-xl opacity-0.9 rounded-full p-4 hover:drop-shadow-lg"
               >
                 {item.icon}
               </button>
@@ -84,14 +84,14 @@ const Ecommerce = () => {
               <div className='border-r-1 border-color m-4 pr-10'>
                 <div>
                   <p>
-                    <span className='text-3xl font-semibold'>$93,512</span> 
+                    <span className='text-2xl font-semibold'>$93,512</span> 
                     <span className='p-1.5 hover:drop-shadow-xl cursor-pointer rounded-full text-white bg-green-400 ml-3'>24%</span> 
                   </p>
                   <p className='text-gray-500 m-1'>Budget</p>
                 </div>
                 <div className='mt-8'>
                   <p>
-                    <span className='text-3xl font-semibold'>$93,512</span> 
+                    <span className='text-2xl font-semibold'>$93,512</span> 
                   </p>
                   <p className='text-gray-500 m-1'>Expense</p>
                 </div>
@@ -111,7 +111,7 @@ const Ecommerce = () => {
                     color='white'
                     bgColor={currentColor}
                     text='Download Report'
-                    borderRadius='10px'
+                    borderRadius='5px'
                   />
                 </div>
               </div>

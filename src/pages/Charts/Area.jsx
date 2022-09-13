@@ -1,8 +1,14 @@
 import React from 'react'
+import { Header, AreaChart} from '../../components'
 
 const Area = () => {
   return (
-    <div>Area</div>
+    <div className='m-4 md:m-10 mt-24 p-10 bg-white dark:bg-secondary-dark-bg rounded-2xl'>
+      <Header category="Area" title="Inflation Rate in Precentage"/>
+      <div className='w-full'>
+        <AreaChart/>
+      </div>
+    </div>
   )
 }
 

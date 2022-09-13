@@ -7,12 +7,13 @@ const ColorPicker = () => {
   const change = (args) => {
     document.getElementById('preview').style.backgroundColor = args.currentValue.hex
   }
-
   return (
-    <div className='m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl'>
+    <div className='m-2 md:m-10 mt-24 p-2 md:p-10 bg-slate-200 rounded-2xl'>
       <Header category="App" title="Editor" />
       <div className='text-center'>
-        <div id="preview" />
+        <p className='text-2xl font-semibold mt-2 mb-4'>Color</p>
+
+        <div id="preview" className='md:w-400 sm:w-80 rounded-2xl border-solid border-2 border-slate-600' />
         <div className='flex justify-center items-center gap-20 flex-wrap'>
           <div>
             <p className='text-2xl font-semibold mt-2 mb-4'>Inline Pallete</p>
